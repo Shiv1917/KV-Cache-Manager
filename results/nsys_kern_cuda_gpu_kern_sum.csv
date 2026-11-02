@@ -1,0 +1,31 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+18.3,1270518772,22506,56452.4,46561.0,39168,259973,16919.9,"void kvp::<unnamed>::paged_attention_kernel<(int)64, (int)8, (bool)1, (bool)0>(kvp::PagedAttnParams, int, int, float *, float *, float *, int)"
+12.7,884678416,24464,36162.5,37376.5,14337,369735,23367.5,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_128x2_tn_align8>(T1::Params)
+12.5,867503948,8668,100081.2,99938.0,99586,407912,4285.4,ampere_fp16_s16816gemm_fp16_256x128_ldg8_f2f_stages_32x3_tn
+11.0,764118723,29898,25557.5,17664.0,14272,320007,11645.0,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_tn_align8>(T1::Params)
+8.2,572338640,550,1040615.7,1042181.0,219492,2071722,585908.7,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_256x128_32x3_tn_align8>(T1::Params)
+6.6,461098197,6226,74060.1,73858.0,72833,89986,1009.3,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_tn_align8>(T1::Params)
+4.5,312580786,3652,85591.7,106098.0,61089,364936,23142.2,ampere_fp16_s1688gemm_fp16_256x64_ldg8_f2f_stages_32x1_tn
+4.5,310681336,550,564875.2,44865.0,43425,2391952,703802.3,"void kvp::<unnamed>::paged_attention_kernel<(int)64, (int)8, (bool)0, (bool)0>(kvp::PagedAttnParams, int, int, float *, float *, float *, int)"
+2.8,198100627,23056,8592.2,6752.0,6496,303302,19045.9,"kvp::<unnamed>::silu_mul_kernel(const __half *, __half *, int)"
+2.3,162851593,47160,3453.2,3201.0,3008,26592,1863.4,"kvp::<unnamed>::rmsnorm_kernel(const float *, const int *, const __half *, __half *, int, float)"
+2.0,140827933,330,426751.3,337431.0,163043,854545,180577.4,ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_tn
+1.8,124638598,542,229960.5,229636.5,226724,278598,4024.9,ampere_s16816gemm_fp16_256x128_ldg8_stages_32x3_tn
+1.7,118938235,2530,47011.2,47009.0,45377,54625,606.9,ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_64x3_tn
+1.5,105850586,3938,26879.3,26881.0,26528,27553,132.5,ampere_fp16_s16816gemm_fp16_128x64_ldg8_f2f_stages_32x6_tn
+1.4,97966645,46112,2124.5,1152.0,832,123267,8400.3,"kvp::<unnamed>::add_residual_kernel(float *, const __half *, unsigned long)"
+1.3,90433788,23056,3922.4,3456.0,3264,62242,4427.7,"kvp::<unnamed>::rope_kernel(__half *, int, const int *, int, int, int, float)"
+1.2,82417999,4510,18274.5,18432.0,16512,220644,3116.6,ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x5_tn
+1.1,78040315,4158,18768.7,18752.0,18112,28097,294.3,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x2_tn_align8>(T1::Params)
+0.8,52646178,22506,2339.2,1984.0,1568,4576,696.0,"void kvp::<unnamed>::paged_attention_reduce_kernel<(int)64>(kvp::PagedAttnParams, int, const float *, const float *, const float *, int)"
+0.7,52049218,255,204114.6,204037.0,202565,205797,629.9,void cutlass::Kernel2<cutlass_80_wmma_tensorop_s161616gemm_f16_16x16_128x1_tn_align8>(T1::Params)
+0.7,50922165,1892,26914.5,26881.0,26721,27969,103.5,ampere_fp16_s16816gemm_fp16_128x64_ldg8_f2f_stages_64x3_tn
+0.6,41461462,1166,35558.7,27232.0,26880,49057,9362.9,ampere_fp16_s16816gemm_fp16_64x128_ldg8_f2f_stages_64x3_tn
+0.5,33539706,142,236195.1,235285.0,231332,273925,5588.0,void cutlass::Kernel2<cutlass_80_tensorop_s16816gemm_f16_256x128_32x3_tn_align8>(T1::Params)
+0.4,28809139,23056,1249.5,1184.0,1024,10624,626.6,"kvp::reshape_and_cache_kernel(const __half *, const __half *, int, __half *, __half *, const int *, int, int, int)"
+0.3,22843082,85,268742.1,268102.0,264710,289542,3381.8,ampere_s1688gemm_fp16_256x64_ldg8_stages_32x1_tn
+0.1,6557795,242,27098.3,27104.0,26945,27361,81.2,ampere_fp16_s16816gemm_fp16_128x64_ldg8_f2f_stages_64x4_tn
+0.1,6538534,3058,2138.2,2144.0,1824,2528,172.7,"void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, __half, __half, float, __half, (bool)0, __half, __half, __half, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)"
+0.1,5441186,1048,5192.0,3904.0,3584,16897,3349.3,"kvp::<unnamed>::argmax_kernel(const float *, int *, int)"
+0.1,4875618,24,203150.8,201220.0,198565,253413,10745.6,void cutlass::Kernel2<cutlass_80_wmma_tensorop_s161616gemm_f16_16x16_128x2_tn_align8>(T1::Params)
+0.1,3666590,1048,3498.7,3136.0,2944,41505,3226.4,"kvp::<unnamed>::embedding_kernel(const int *, const __half *, float *, int)"

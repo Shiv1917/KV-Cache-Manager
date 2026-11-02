@@ -1,0 +1,6 @@
+build/
+build-*/
+data/
+*.nsys-rep
+*.sqlite
+.DS_Store
